@@ -1,3 +1,24 @@
+# My Doctor
+ServiceNow Classic Scoped application in NewYork version
+
+### Project Overview
+It is a Hospital management application
+
+### Features
+* Book Appointment
+* Order Medicines
+* Health articles
+* Health Checkup
+* Health tips
+* Virtual agent
+* Live chat support
+
+
+-------------------------------------------------------------------------------------
+_____________________________________________________________________________________
+
+
+
 # Generated files
 This repository contains generated files and a checksum.
 
