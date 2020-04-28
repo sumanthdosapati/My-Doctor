@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function ($http, $window, spUtil) {	 
+	var c = this;	
+  $http.get(c.options.queue_url).then(function (response) {		
+    if (response.data.result && response.data.result.length)
+      angular.extend(c.data, response.data.result[0]);
+    else
+      angular.extend(c.data, response.data.result);
+		
+  })	
+  c.open = function () {		
+		console.log(spUtil.format(c.options.window.url, {sys_id: c.data.sys_id}), c.options.window.target, c.options.window.options)
+    $window.open(spUtil.format(c.options.window.url, {sys_id: c.data.sys_id}), c.options.window.target, c.options.window.options);
+  };
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.waiting-time {
+  float: right;
+  margin-right: 5px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>color</field_list>
+        <has_preview>false</has_preview>
+        <id>mydoctor_connect_support</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>MyDoctor connect support</name>
+        <option_schema>[{"name":"queue_url","label":"Queue URL","type":"string"},{"name":"queue_name","label":"Queue Name","type":"string"},{"name":"queue_id","label":"Queue ID","type":"string"},{"name":"message","label":"Message","type":"string"},{"name":"window","label":"Window","type":"string"},{"name":"title","label":"Title","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {	
+	// Default Values
+	options.queue_url = options.queue_url || '/api/now/connect/support/queues';	
+	if (options.queue_name) 
+		options.queue_url += '?queue_name=' + options.queue_name;
+		
+	if (options.queue_id) 
+		options.queue_url += '/' + options.queue_id;
+	
+	options.title = options.title || 'Chat Support';
+	options.title = gs.getMessage(options.title);	
+	
+	options.message = options.message || 'Click here to start a chat';
+	options.message = gs.getMessage(options.message);	
+	options.window = options.window || {url: '/$chat_support.do?queueID=7d1888a2db1c1810fec729e1ca96190f', target: '_blank', options: 'location=no,toolbar=no,menubar=no,scrollbars=yes,width=760,height=600,resizable=yes'};
+})();
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-24 13:56:19</sys_created_on>
+        <sys_id>5a762176db109810fec729e1ca961956</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>MyDoctor connect support</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sp_widget_5a762176db109810fec729e1ca961956</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:08:03</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-{{::c.options.color}} b">  
+  <div class="panel-heading">
+    <h4 class="panel-title">{{::c.options.title}}</h4>
+  </div>  
+  <div class="panel-body">    
+    <a class="btn btn-info btn-block" ng-click="c.open()" role="button">{{::c.options.message}}</a>    
+  </div>     
+  <div class="panel-footer clearfix">
+    <div class="pull-right">Avg wait: {{::c.data.average_wait_time}}</div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

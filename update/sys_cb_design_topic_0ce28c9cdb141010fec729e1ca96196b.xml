@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="Update MyDoctor appointments">80e28c9cdb141010fec729e1ca961968</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"6d1d3f4ed7974d9682a6bc770a44597d","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"6d1d3f4ed7974d9682a6bc770a44597d"}],"goals":[{"name":"primary","trigger_id":"6d1d3f4ed7974d9682a6bc770a44597d","nodes":[{"type":"StartGoal","goal_id":"d223e44e88874e4983086ca8d59324df","greeting_msg":{"type":"String","mode":"string","value":""},"id":"f38e117a6d7c4307b0582e15bbae988f","name":"Start"},{"type":"TerminateGoal","goal_id":"d223e44e88874e4983086ca8d59324df","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"80db66e12445447796094846ce49a593","name":"End"}],"edges":[{"type":"Edge","source_node_id":"f38e117a6d7c4307b0582e15bbae988f","target_node_id":"80db66e12445447796094846ce49a593","id":"be57494426354cac95ac64243b0930b8"}],"id":"d223e44e88874e4983086ca8d59324df"}],"script_variables":[],"glide_variables":[],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"e4a610dedb04d010fec729e1ca9619a5","id":"357fb784db141010fec729e1ca961903","name":"Update MyDoctor appointments","key_phrases":["Update MyDoctor appointments","mydoctor","appointments","my appointments"],"nlu_provider":"","nlu_model":"","nlu_intent":"","flexible_conversation_switching":false,"design_category":"ea3ef788db141010fec729e1ca96190f"}</design_definition>
+        <design_topic_id>357fb784db141010fec729e1ca961903</design_topic_id>
+        <name>Update MyDoctor appointments</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-16 12:16:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>0ce28c9cdb141010fec729e1ca96196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sys_cb_design_topic_0ce28c9cdb141010fec729e1ca96196b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-16 12:16:21</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

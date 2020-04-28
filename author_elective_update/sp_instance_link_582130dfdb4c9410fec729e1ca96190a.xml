@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">19d070dfdb4c9410fec729e1ca96198b</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-13 13:04:31</sys_created_on>
+        <sys_id>582130dfdb4c9410fec729e1ca96190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sp_instance_link_582130dfdb4c9410fec729e1ca96190a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-13 13:04:31</sys_updated_on>
+        <title/>
+        <type>page</type>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_link>
+    <sys_translated_text action="DELETE" query="documentkey=582130dfdb4c9410fec729e1ca96190a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</application>
+        <file_path/>
+        <instance_id>3d76430cdb74ff0049eac59705961984</instance_id>
+        <instance_name>dev79854</instance_name>
+        <name>sp_instance_link_582130dfdb4c9410fec729e1ca96190a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link"><sp_instance_link action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><kb_article/><kb_category/><kb_topic/><order>1</order><roles/><sc_cat_item/><sc_category/><short_description/><size>md</size><sp_column display_value="1">19d070dfdb4c9410fec729e1ca96198b</sp_column><sp_page/><sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget><sys_class_name>sp_instance_link</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-13 13:04:31</sys_created_on><sys_id>582130dfdb4c9410fec729e1ca96190a</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package><sys_policy/><sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope><sys_update_name>sp_instance_link_582130dfdb4c9410fec729e1ca96190a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-13 13:04:31</sys_updated_on><title/><type>page</type><url/><widget_parameters/></sp_instance_link><sys_translated_text action="delete_multiple" query="documentkey=582130dfdb4c9410fec729e1ca96190a"/></record_update>]]></payload>
+        <payload_hash>1655082221</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>b4a658dedb04d010fec729e1ca961941</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-13 13:04:31</sys_created_on>
+        <sys_id>9c2130dfdb4c9410fec729e1ca96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17173a42e4a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-13 13:04:31</sys_updated_on>
+        <type>Instance with Link</type>
+        <update_guid>d42130dfee4c94102c5528fb7ee81c0c</update_guid>
+        <update_guid_history>d42130dfee4c94102c5528fb7ee81c0c:1655082221</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">a98968a7dbc8d410fec729e1ca9619d3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-14 07:09:46</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_link">sp_instance_link</sys_db_object>
+        <sys_id>b6eae835fa96468099dbdb14867f0239</sys_id>
+        <sys_metadata>582130dfdb4c9410fec729e1ca96190a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_scope_delete display_value="">00aa2808508b440c8000d0b4d69c1d90</sys_scope_delete>
+        <sys_update_name>sp_instance_link_582130dfdb4c9410fec729e1ca96190a</sys_update_name>
+        <sys_update_version display_value="sp_instance_link_582130dfdb4c9410fec729e1ca96190a">9c2130dfdb4c9410fec729e1ca96190c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-14 07:09:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

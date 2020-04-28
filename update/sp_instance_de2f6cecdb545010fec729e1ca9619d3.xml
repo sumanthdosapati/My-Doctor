@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">300f6420db945010fec729e1ca961905</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-17 10:08:19</sys_created_on>
+        <sys_id>de2f6cecdb545010fec729e1ca9619d3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Welcome to MyDoctor - Landing</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sp_instance_de2f6cecdb545010fec729e1ca9619d3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-17 10:11:25</sys_updated_on>
+        <title>Welcome to MyDoctor - Landing</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<h1 class=\"text-white text-4x\">${Welcome to<br>My Doctor}</h1><h3 class=\"text-white\">${Log in to book appointments, get help or order medicines}</h3>",
+		"displayValue": "<h1 class=\"text-white text-4x\">${Welcome to<br />My Doctor}</h1>\n<h3 class=\"text-white\">${Log in to book appointments, get help or order medicines}</h3>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=de2f6cecdb545010fec729e1ca9619d3"/>
+</record_update>

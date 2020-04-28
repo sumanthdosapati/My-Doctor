@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"stages":{"c1b0fdcedb90d410fec729e1ca96193f":{"duration":"","order":100,"stageId":"c1b0fdcedb90d410fec729e1ca96193f","name":"Completed","value":"3"},"45b0fdcedb90d410fec729e1ca96193f":{"duration":"","order":100,"stageId":"45b0fdcedb90d410fec729e1ca96193f","name":"Requested","value":"1"},"41b0fdcedb90d410fec729e1ca96193f":{"duration":"","order":100,"stageId":"41b0fdcedb90d410fec729e1ca96193f","name":"Fulfillment","value":"2"}},"subflows":[],"activities":{"0db0fdcedb90d410fec729e1ca96193f":"c1b0fdcedb90d410fec729e1ca96193f","49b0fdcedb90d410fec729e1ca961943":"45b0fdcedb90d410fec729e1ca96193f","4db0fdcedb90d410fec729e1ca961941":"45b0fdcedb90d410fec729e1ca96193f","c5b0bd02dbd0d410fec729e1ca961931":"41b0fdcedb90d410fec729e1ca96193f","4db0fdcedb90d410fec729e1ca961944":"45b0fdcedb90d410fec729e1ca96193f"},"ends":["45b0fdcedb90d410fec729e1ca961944"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description/>
+        <expected_sequences>4db0bd02dbd0d410fec729e1ca961930,49b0fdcedb90d410fec729e1ca961943,4db0fdcedb90d410fec729e1ca961944,4db0fdcedb90d410fec729e1ca961941,c5b0bd02dbd0d410fec729e1ca961931,0db0fdcedb90d410fec729e1ca96193f,45b0fdcedb90d410fec729e1ca961944</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>4db0bd02dbd0d410fec729e1ca961930,49b0fdcedb90d410fec729e1ca961943,4db0fdcedb90d410fec729e1ca961944,4db0fdcedb90d410fec729e1ca961941,c5b0bd02dbd0d410fec729e1ca961931,0db0fdcedb90d410fec729e1ca96193f,45b0fdcedb90d410fec729e1ca961944</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Medicine Ordering nw</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>stage</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">4db0bd02dbd0d410fec729e1ca961930</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>81b0fdcedb90d410fec729e1ca96193e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 07:53:29</sys_updated_on>
+        <table>sc_req_item</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Medicine Ordering nw">ff0decf5db109410fec729e1ca9619c5</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Medicine Ordering nw</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-21 07:11:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ff0decf5db109410fec729e1ca9619c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Medicine Ordering nw</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>wf_workflow_ff0decf5db109410fec729e1ca9619c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-21 07:11:33</sys_updated_on>
+        <table>sc_req_item</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Requested</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>45b0fdcedb90d410fec729e1ca96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>1</value>
+        <workflow_version display_value="Medicine Ordering nw">81b0fdcedb90d410fec729e1ca96193e</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Fulfillment</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>41b0fdcedb90d410fec729e1ca96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>2</value>
+        <workflow_version display_value="Medicine Ordering nw">81b0fdcedb90d410fec729e1ca96193e</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Completed</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>c1b0fdcedb90d410fec729e1ca96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>3</value>
+        <workflow_version display_value="Medicine Ordering nw">81b0fdcedb90d410fec729e1ca96193e</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Assigning</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Requested">45b0fdcedb90d410fec729e1ca96193f</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>49b0fdcedb90d410fec729e1ca961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Medicine Ordering nw">81b0fdcedb90d410fec729e1ca96193e</workflow_version>
+        <x>223</x>
+        <y>41</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=49b0fdcedb90d410fec729e1ca961943"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>49b0fdcedb90d410fec729e1ca961943</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>c9b0fdcedb90d410fec729e1ca961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>assignment_group=e07ba4eddb505410fec729e1ca9619a5^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>49b0fdcedb90d410fec729e1ca961943</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>c9b0fdcedb90d410fec729e1ca961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>assignment_group=e07ba4eddb505410fec729e1ca9619a5^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Assigning">49b0fdcedb90d410fec729e1ca961943</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>cdb0fdcedb90d410fec729e1ca961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>4db0bd02dbd0d410fec729e1ca961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Medicine Ordering nw">81b0fdcedb90d410fec729e1ca96193e</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=4db0bd02dbd0d410fec729e1ca961930"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">4db0bd02dbd0d410fec729e1ca961930</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>01b0bd02dbd0d410fec729e1ca961931</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>45b0fdcedb90d410fec729e1ca961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Medicine Ordering nw">81b0fdcedb90d410fec729e1ca96193e</workflow_version>
+        <x>1071</x>
+        <y>63</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=45b0fdcedb90d410fec729e1ca961944"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Notification to assignment group</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Requested">45b0fdcedb90d410fec729e1ca96193f</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>4db0fdcedb90d410fec729e1ca961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Medicine Ordering nw">81b0fdcedb90d410fec729e1ca96193e</workflow_version>
+        <x>608</x>
+        <y>227</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=4db0fdcedb90d410fec729e1ca961941"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961941</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>09b0fdcedb90d410fec729e1ca961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>Medicines Order - Request Raised by ${opened_by}</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961941</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>45b0fdcedb90d410fec729e1ca961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961941</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>81b0fdcedb90d410fec729e1ca961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961941</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>8db0fdcedb90d410fec729e1ca961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>${assignment_group}</value>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961941</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>c9b0fdcedb90d410fec729e1ca961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>Hi,&#13;
+&#13;
+${opened_by} has raised an order for this medicine: ${cat_item}&#13;
+Kindly fulfill the request for the same.&#13;
+&#13;
+Regards,&#13;
+MyDoctor IT team.</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961941</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>cdb0fdcedb90d410fec729e1ca961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value/>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961941</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>cdb0fdcedb90d410fec729e1ca961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value/>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961941</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>8db0fdcedb90d410fec729e1ca961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>${assignment_group}</value>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961941</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>09b0fdcedb90d410fec729e1ca961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>Medicines Order - Request Raised by ${opened_by}</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961941</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>c9b0fdcedb90d410fec729e1ca961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>Hi,&#13;
+&#13;
+${opened_by} has raised an order for this medicine: ${cat_item}&#13;
+Kindly fulfill the request for the same.&#13;
+&#13;
+Regards,&#13;
+MyDoctor IT team.</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961941</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>81b0fdcedb90d410fec729e1ca961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961941</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>45b0fdcedb90d410fec729e1ca961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Notification to assignment group">4db0fdcedb90d410fec729e1ca961941</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>81b0fdcedb90d410fec729e1ca961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Notification to end user</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Requested">45b0fdcedb90d410fec729e1ca96193f</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>4db0fdcedb90d410fec729e1ca961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Medicine Ordering nw">81b0fdcedb90d410fec729e1ca96193e</workflow_version>
+        <x>493</x>
+        <y>71</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=4db0fdcedb90d410fec729e1ca961944"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961944</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>01b0bd02dbd0d410fec729e1ca961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>Dear  ${opened_by},&#13;
+&#13;
+Your order for the medicines ${cat_item} has been placed successfully.&#13;
+&#13;
+Thank you for using MyDoctor.&#13;
+&#13;
+Regards,&#13;
+MyDoctor IT team.</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961944</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>45b0fdcedb90d410fec729e1ca961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961944</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>4db0bd02dbd0d410fec729e1ca96192f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>Medicines Order</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961944</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>81b0fdcedb90d410fec729e1ca961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961944</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>c1b0bd02dbd0d410fec729e1ca961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961944</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>cdb0fdcedb90d410fec729e1ca961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>${opened_by}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961944</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>cdb0fdcedb90d410fec729e1ca961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>${opened_by}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961944</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>c1b0bd02dbd0d410fec729e1ca961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961944</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>4db0bd02dbd0d410fec729e1ca96192f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>Medicines Order</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961944</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>01b0bd02dbd0d410fec729e1ca961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>Dear  ${opened_by},&#13;
+&#13;
+Your order for the medicines ${cat_item} has been placed successfully.&#13;
+&#13;
+Thank you for using MyDoctor.&#13;
+&#13;
+Regards,&#13;
+MyDoctor IT team.</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961944</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>81b0fdcedb90d410fec729e1ca961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4db0fdcedb90d410fec729e1ca961944</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>45b0fdcedb90d410fec729e1ca961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Notification to end user">4db0fdcedb90d410fec729e1ca961944</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>c5b0bd02dbd0d410fec729e1ca961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Notification to end user - completed</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Completed">c1b0fdcedb90d410fec729e1ca96193f</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>0db0fdcedb90d410fec729e1ca96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Medicine Ordering nw">81b0fdcedb90d410fec729e1ca96193e</workflow_version>
+        <x>926</x>
+        <y>199</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=0db0fdcedb90d410fec729e1ca96193f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0db0fdcedb90d410fec729e1ca96193f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>01b0fdcedb90d410fec729e1ca961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>${opened_by}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0db0fdcedb90d410fec729e1ca96193f</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>01b0fdcedb90d410fec729e1ca961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0db0fdcedb90d410fec729e1ca96193f</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>05b0fdcedb90d410fec729e1ca961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0db0fdcedb90d410fec729e1ca96193f</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>4db0fdcedb90d410fec729e1ca961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>Dear  ${opened_by},&#13;
+&#13;
+Your order for the medicines ${cat_item} has been delivered successfully.&#13;
+&#13;
+Thank you for using MyDoctor.&#13;
+&#13;
+Regards,&#13;
+MyDoctor IT team.</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0db0fdcedb90d410fec729e1ca96193f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>89b0fdcedb90d410fec729e1ca961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>Medicines Order - Delivered</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0db0fdcedb90d410fec729e1ca96193f</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>c5b0fdcedb90d410fec729e1ca961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0db0fdcedb90d410fec729e1ca96193f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>01b0fdcedb90d410fec729e1ca961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>${opened_by}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0db0fdcedb90d410fec729e1ca96193f</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>01b0fdcedb90d410fec729e1ca961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0db0fdcedb90d410fec729e1ca96193f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>89b0fdcedb90d410fec729e1ca961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>Medicines Order - Delivered</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0db0fdcedb90d410fec729e1ca96193f</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>4db0fdcedb90d410fec729e1ca961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>Dear  ${opened_by},&#13;
+&#13;
+Your order for the medicines ${cat_item} has been delivered successfully.&#13;
+&#13;
+Thank you for using MyDoctor.&#13;
+&#13;
+Regards,&#13;
+MyDoctor IT team.</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0db0fdcedb90d410fec729e1ca96193f</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>05b0fdcedb90d410fec729e1ca961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0db0fdcedb90d410fec729e1ca96193f</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>c5b0fdcedb90d410fec729e1ca961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Notification to end user - completed">0db0fdcedb90d410fec729e1ca96193f</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>05b0fdcedb90d410fec729e1ca961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Wait for completion</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Fulfillment">41b0fdcedb90d410fec729e1ca96193f</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>c5b0bd02dbd0d410fec729e1ca961931</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Medicine Ordering nw">81b0fdcedb90d410fec729e1ca96193e</workflow_version>
+        <x>762</x>
+        <y>391</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=c5b0bd02dbd0d410fec729e1ca961931"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c5b0bd02dbd0d410fec729e1ca961931</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>0db0bd02dbd0d410fec729e1ca961931</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>stateIN3,4,7^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c5b0bd02dbd0d410fec729e1ca961931</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>49b0bd02dbd0d410fec729e1ca961931</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c5b0bd02dbd0d410fec729e1ca961931</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>0db0bd02dbd0d410fec729e1ca961931</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>stateIN3,4,7^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c5b0bd02dbd0d410fec729e1ca961931</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>49b0bd02dbd0d410fec729e1ca961931</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait for completion">c5b0bd02dbd0d410fec729e1ca961931</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>01b0bd02dbd0d410fec729e1ca961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">01b0bd02dbd0d410fec729e1ca961932</condition>
+        <from display_value="Wait for completion">c5b0bd02dbd0d410fec729e1ca961931</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>01b0bd02dbd0d410fec729e1ca961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <to display_value="Notification to end user - completed">0db0fdcedb90d410fec729e1ca96193f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">05b0fdcedb90d410fec729e1ca961941</condition>
+        <from display_value="Notification to end user - completed">0db0fdcedb90d410fec729e1ca96193f</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>01b0bd02dbd0d410fec729e1ca961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <to display_value="End">45b0fdcedb90d410fec729e1ca961944</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">cdb0fdcedb90d410fec729e1ca961943</condition>
+        <from display_value="Assigning">49b0fdcedb90d410fec729e1ca961943</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>4db0bd02dbd0d410fec729e1ca961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <to display_value="Notification to end user">4db0fdcedb90d410fec729e1ca961944</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">01b0bd02dbd0d410fec729e1ca961931</condition>
+        <from display_value="Begin">4db0bd02dbd0d410fec729e1ca961930</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>89b0bd02dbd0d410fec729e1ca961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <to display_value="Assigning">49b0fdcedb90d410fec729e1ca961943</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">81b0fdcedb90d410fec729e1ca961943</condition>
+        <from display_value="Notification to assignment group">4db0fdcedb90d410fec729e1ca961941</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>c1b0bd02dbd0d410fec729e1ca961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <to display_value="Wait for completion">c5b0bd02dbd0d410fec729e1ca961931</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">c5b0bd02dbd0d410fec729e1ca961930</condition>
+        <from display_value="Notification to end user">4db0fdcedb90d410fec729e1ca961944</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>c5b0bd02dbd0d410fec729e1ca961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <to display_value="Notification to assignment group">4db0fdcedb90d410fec729e1ca961941</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:45:34</sys_created_on>
+        <sys_id>05b0fdcedb90d410fec729e1ca96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 06:45:34</sys_updated_on>
+        <workflow_version display_value="Medicine Ordering nw">81b0fdcedb90d410fec729e1ca96193e</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=ff0decf5db109410fec729e1ca9619c5^sys_id!=81b0fdcedb90d410fec729e1ca96193e">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

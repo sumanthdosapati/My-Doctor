@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Atarax">10ea60e8db545010fec729e1ca961988</sc_cat_item>
+        <sc_category display_value="Skin Medicines">8697686cdb145010fec729e1ca961976</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-17 09:53:16</sys_created_on>
+        <sys_id>82bbe06cdb545010fec729e1ca9619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Skin Medicines.Atarax</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sc_cat_item_category_82bbe06cdb545010fec729e1ca9619ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-17 09:53:16</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

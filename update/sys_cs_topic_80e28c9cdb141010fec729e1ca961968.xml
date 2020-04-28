@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic">
+    <sys_cs_topic action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applicability>true</applicability>
+        <cb_topic_id display_value="">80e28c9cdb141010fec729e1ca961968</cb_topic_id>
+        <definition>{"id":"80e28c9cdb141010fec729e1ca961968","name":"Update MyDoctor appointments","system_topic":false,"vendor_id":"c2f0b8f187033200246ddd4c97cb0bb9","description":"Update MyDoctor appointments","applicability":"true","category":"","key_phrases":["Update MyDoctor appointments","mydoctor","appointments","my appointments"],"variables":[{"name":"__segment_trigger_6d1d3f4ed7974d9682a6bc770a44597d_done","type":"java.lang.Object","init_value":"false"},{"name":"previous_graph_node","type":"java.lang.Object"}],"fields":[{"type":"Boolean","name":"RootDecisionBranch_44e24c9c9c1410103e47df8d9d74df0b","unique":false,"default_value":"true","key_phrases":[],"static_enum_list":[]},{"type":"String","name":"__silent_Decision_RootDecision_c0e24c9c50141010ac88cc7bed82550b","unique":false,"key_phrases":[],"static_enum_list":[]},{"type":"String","name":"__silent_TerminateGoal_80db66e12445447796094846ce49a593","unique":false,"key_phrases":[],"static_enum_list":[]},{"type":"String","name":"__silent_StartGoal_f38e117a6d7c4307b0582e15bbae988f","unique":false,"key_phrases":[],"static_enum_list":[]},{"type":"String","name":"__silent_Branch_RootDecisionBranch_04e24c9ce8141010df6c2a499a033d0b","unique":false,"key_phrases":[],"static_enum_list":[]},{"type":"Reference","table_name":"sys_user","name":"user","unique":false,"key_phrases":[],"static_enum_list":[]}],"actions":[],"tasks":[{"type":"Consumer to system","show_as_button":true,"name":"primary","description":"primary","applicability":"vaVars.__segment_trigger_6d1d3f4ed7974d9682a6bc770a44597d_done==false &amp;&amp; true","mode":"Qmode","key_phrases":[],"greeting_msg":"vaInputs.initialize(\"user\");vaInputs.initialize(\"RootDecisionBranch_44e24c9c9c1410103e47df8d9d74df0b\");vaInputs.initialize(\"__silent_TerminateGoal_80db66e12445447796094846ce49a593\");vaInputs.initialize(\"__silent_StartGoal_f38e117a6d7c4307b0582e15bbae988f\");vaInputs.initialize(\"__silent_Branch_RootDecisionBranch_04e24c9ce8141010df6c2a499a033d0b\");vaInputs.initialize(\"__silent_Decision_RootDecision_c0e24c9c50141010ac88cc7bed82550b\");null;","fields":[{"name":"__silent_Decision_RootDecision_c0e24c9c50141010ac88cc7bed82550b","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"RootDecision_for_goal_primary___RootDecision_c0e24c9c50141010ac88cc7bed82550b\";vaInputs.__silent_Decision_RootDecision_c0e24c9c50141010ac88cc7bed82550b=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"RootDecision_for_goal_primary___RootDecision_c0e24c9c50141010ac88cc7bed82550b\";vaInputs.RootDecisionBranch_44e24c9c9c1410103e47df8d9d74df0b=true;null;"},{"name":"__silent_Branch_RootDecisionBranch_04e24c9ce8141010df6c2a499a033d0b","applicable":"vaVars.previous_graph_node==\"RootDecision_for_goal_primary___RootDecision_c0e24c9c50141010ac88cc7bed82550b\" &amp;&amp; ((vaInputs.RootDecisionBranch_44e24c9c9c1410103e47df8d9d74df0b.getValue() == true))","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"RootDecisionBranch_04e24c9ce8141010df6c2a499a033d0b___RootDecisionBranch_04e24c9ce8141010df6c2a499a033d0b\";vaInputs.__silent_Branch_RootDecisionBranch_04e24c9ce8141010df6c2a499a033d0b=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"RootDecisionBranch_04e24c9ce8141010df6c2a499a033d0b___RootDecisionBranch_04e24c9ce8141010df6c2a499a033d0b\";null;"},{"name":"__silent_StartGoal_f38e117a6d7c4307b0582e15bbae988f","applicable":"vaVars.previous_graph_node==\"RootDecisionBranch_04e24c9ce8141010df6c2a499a033d0b___RootDecisionBranch_04e24c9ce8141010df6c2a499a033d0b\"","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"Start___f38e117a6d7c4307b0582e15bbae988f\";vaInputs.__silent_StartGoal_f38e117a6d7c4307b0582e15bbae988f=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"Start___f38e117a6d7c4307b0582e15bbae988f\";null;"},{"name":"__silent_TerminateGoal_80db66e12445447796094846ce49a593","applicable":"vaVars.previous_graph_node==\"Start___f38e117a6d7c4307b0582e15bbae988f\"","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"End___80db66e12445447796094846ce49a593\";vaInputs.__silent_TerminateGoal_80db66e12445447796094846ce49a593=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"End___80db66e12445447796094846ce49a593\";vaVars.__segment_trigger_6d1d3f4ed7974d9682a6bc770a44597d_done=true;null;"}],"variables_update":[]}],"roles":[],"active":false,"published":true,"flexible_conversation_switching":false,"design_category":"ea3ef788db141010fec729e1ca96190f","nlu_provider":"","nlu_model":"","nlu_intent":"","score":0.0,"visible":true,"sys_scope":"e4a610dedb04d010fec729e1ca9619a5","title":"Update MyDoctor appointments"}</definition>
+        <design_category display_value="Virtual agent topics for MyDoctor application">ea3ef788db141010fec729e1ca96190f</design_category>
+        <fields/>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <is_system_topic>false</is_system_topic>
+        <key_phrases>Update MyDoctor appointments mydoctor appointments my appointments</key_phrases>
+        <metaphone>APTT MTKT APNT M</metaphone>
+        <name>Update MyDoctor appointments</name>
+        <nlu_intent/>
+        <nlu_model/>
+        <nlu_provider/>
+        <published>true</published>
+        <roles/>
+        <sys_class_name>sys_cs_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-16 12:16:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>80e28c9cdb141010fec729e1ca961968</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Update MyDoctor appointments</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sys_cs_topic_80e28c9cdb141010fec729e1ca961968</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-16 12:16:30</sys_updated_on>
+        <title>Update MyDoctor appointments</title>
+        <vendor display_value="ServiceNow">c2f0b8f187033200246ddd4c97cb0bb9</vendor>
+        <visible>true</visible>
+    </sys_cs_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=80e28c9cdb141010fec729e1ca961968"/>
+</record_update>

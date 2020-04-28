@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <category display_value="Virtual agent topics for MyDoctor application">ea3ef788db141010fec729e1ca96190f</category>
+        <connect_queue/>
+        <description>Topic allows users to update MyDoctor records</description>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.13.np4",
+  "goals": {
+    "12d6469d3ed84d778202b20851a7cfcc": {
+      "id": "12d6469d3ed84d778202b20851a7cfcc",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "956d845068284b3d8593715827057b1c": {
+          "id": "956d845068284b3d8593715827057b1c",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": "I can help you find and update MyDoctor appointments for a type of request.",
+            "mode": "simple"
+          }
+        },
+        "72136392e8ae42f3a8876b9fb41f722e": {
+          "id": "72136392e8ae42f3a8876b9fb41f722e",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": " Ask again when you need to update other MyDoctor records.",
+            "mode": "simple"
+          }
+        },
+        "123df5a91be645e690b89a04988ee93f": {
+          "stepType": "ChoicePrompt",
+          "name": "MyDoctor Type",
+          "prompt": {
+            "value": "Which type of MyDoctor record would you like to view",
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "optional": false,
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "a0e430437de94799b0b29d48e1f9521e",
+          "id": "123df5a91be645e690b89a04988ee93f",
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "entity": ""
+        },
+        "c059194ad73d4257b612e3c1e43b2db6": {
+          "id": "c059194ad73d4257b612e3c1e43b2db6",
+          "stepType": "TextOutput",
+          "name": "Confirm Type",
+          "value": {
+            "value": "You selected : {{vaInputs.mydoctor_type}}",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "969b11e3906e431d9b8f57856bbcc678": {
+          "stepType": "ReferenceChoicePrompt",
+          "name": "MyDoctor list",
+          "prompt": {
+            "value": "Select a NeedIt record to view",
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "optional": false,
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "55547c5067644cd091e385d2c62326c9",
+          "id": "969b11e3906e431d9b8f57856bbcc678",
+          "mode": "glide_record",
+          "script": "",
+          "noRecordsResponseMsg": {
+            "value": "You have no open MyDoctor records.",
+            "mode": "simple"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "active=true^variables.04fe4ab4db989010fec729e1ca96192e={{vaInputs.mydoctor_type}}^opened_by={{vaInputs.user}}"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "entity": ""
+        },
+        "bac8b9b802634f31858ec94e1aaf6cc7": {
+          "id": "bac8b9b802634f31858ec94e1aaf6cc7",
+          "stepType": "RecordOutput",
+          "name": "MyDoctor card",
+          "variableId": "55547c5067644cd091e385d2c62326c9",
+          "mode": "variable",
+          "tableName": "sc_req_item",
+          "fields": [
+            "cat_item"
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "",
+            "value": ""
+          }
+        },
+        "db45e92f1ccd4373b9173a35885005f9": {
+          "id": "db45e92f1ccd4373b9173a35885005f9",
+          "stepType": "Prompt",
+          "name": "Search again",
+          "prompt": {
+            "value": "Would you like to view another record?",
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "optional": false,
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "entity": "",
+          "variableId": "5f4cd3a0f8814d4ebbf19b17aa676cc9"
+        },
+        "07007c8f88264807a881b793e536bcdb": {
+          "id": "07007c8f88264807a881b793e536bcdb",
+          "stepType": "Decision",
+          "name": "Find more Appointment records"
+        },
+        "496bc0132ae741a49954642e278a0970": {
+          "id": "496bc0132ae741a49954642e278a0970",
+          "stepType": "Prompt",
+          "name": "New Appointment date",
+          "prompt": {
+            "value": " When do you need the Appointment?",
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "optional": false,
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "entity": "",
+          "variableId": "8a07db6fef714bfa8182b186ace71385"
+        },
+        "93dccd827a5a4dca88baa8f36a21fe2b": {
+          "id": "93dccd827a5a4dca88baa8f36a21fe2b",
+          "stepType": "CrudAction",
+          "name": "Change appointment date",
+          "template": "variables={{vaInputs.new_appointment_type}}",
+          "mode": "update",
+          "record": "55547c5067644cd091e385d2c62326c9",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "3c9edfaed03a4d478cf47aff4c2a6deb"
+        },
+        "649ec834de6246158a0bafb1d9739d16": {
+          "id": "649ec834de6246158a0bafb1d9739d16",
+          "stepType": "RecordOutput",
+          "name": "Updated appointment",
+          "variableId": "55547c5067644cd091e385d2c62326c9",
+          "mode": "variable",
+          "tableName": "sc_req_item",
+          "fields": [
+            "variables"
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "73ef633a431d46f5a3f91ddb189eb1c1",
+          "edgeType": "Edge",
+          "source": "956d845068284b3d8593715827057b1c",
+          "target": "123df5a91be645e690b89a04988ee93f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ff96180376fb46f49e29820b24484ec3",
+          "edgeType": "Edge",
+          "source": "123df5a91be645e690b89a04988ee93f",
+          "target": "c059194ad73d4257b612e3c1e43b2db6",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "6ae12e6c131e426eb989cb2a2e8befbd",
+          "edgeType": "Edge",
+          "source": "c059194ad73d4257b612e3c1e43b2db6",
+          "target": "969b11e3906e431d9b8f57856bbcc678",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e078e83c8ab441eea5f4ca5509ee7cd7",
+          "edgeType": "Edge",
+          "source": "969b11e3906e431d9b8f57856bbcc678",
+          "target": "bac8b9b802634f31858ec94e1aaf6cc7",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "cb97509a05b74909aec7f123bf8b166a",
+          "edgeType": "Edge",
+          "source": "db45e92f1ccd4373b9173a35885005f9",
+          "target": "07007c8f88264807a881b793e536bcdb",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "cd541e1be841478b96c823adfa6d61e5",
+          "edgeType": "Branch",
+          "source": "07007c8f88264807a881b793e536bcdb",
+          "target": "72136392e8ae42f3a8876b9fb41f722e",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "search_again=false",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "3c6c8e5ffd9942ab9b90b2d614193f0a",
+          "edgeType": "Branch",
+          "source": "07007c8f88264807a881b793e536bcdb",
+          "target": "123df5a91be645e690b89a04988ee93f",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "search_again=true",
+            "mode": "query"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "6c409889621d4a498e2c3882bd09a1b4",
+          "edgeType": "Edge",
+          "source": "bac8b9b802634f31858ec94e1aaf6cc7",
+          "target": "496bc0132ae741a49954642e278a0970",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "efc9e622f9c44253a90edbf0a3105f86",
+          "edgeType": "Edge",
+          "source": "496bc0132ae741a49954642e278a0970",
+          "target": "93dccd827a5a4dca88baa8f36a21fe2b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ceafa31d409e441eb14b71c26ada2117",
+          "edgeType": "Edge",
+          "source": "93dccd827a5a4dca88baa8f36a21fe2b",
+          "target": "649ec834de6246158a0bafb1d9739d16",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c3e53c623d884153a66e206b869729cb",
+          "edgeType": "Edge",
+          "source": "649ec834de6246158a0bafb1d9739d16",
+          "target": "db45e92f1ccd4373b9173a35885005f9",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "a0e430437de94799b0b29d48e1f9521e": {
+      "id": "a0e430437de94799b0b29d48e1f9521e",
+      "name": "mydoctor_type",
+      "label": "MyDoctor Type",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Consulting",
+          "value": "consulting"
+        },
+        {
+          "label": "Surgery",
+          "value": "surgery"
+        }
+      ],
+      "category": "vaInputs"
+    },
+    "55547c5067644cd091e385d2c62326c9": {
+      "id": "55547c5067644cd091e385d2c62326c9",
+      "name": "mydoctor_list",
+      "label": "MyDoctor List",
+      "varType": "reference",
+      "table": "sc_req_item",
+      "category": "vaInputs"
+    },
+    "5f4cd3a0f8814d4ebbf19b17aa676cc9": {
+      "id": "5f4cd3a0f8814d4ebbf19b17aa676cc9",
+      "name": "search_again",
+      "label": "Search Again",
+      "varType": "boolean",
+      "category": "vaInputs"
+    },
+    "8a07db6fef714bfa8182b186ace71385": {
+      "id": "8a07db6fef714bfa8182b186ace71385",
+      "name": "new_appointment_date",
+      "label": "New Appointment Date",
+      "varType": "date_time",
+      "category": "vaInputs",
+      "mode": "date"
+    },
+    "3c9edfaed03a4d478cf47aff4c2a6deb": {
+      "id": "3c9edfaed03a4d478cf47aff4c2a6deb",
+      "name": "change_appointment_date",
+      "label": "Change Appointment Date",
+      "varType": "reference",
+      "table": "",
+      "inactive": true,
+      "category": "vaInputs"
+    }
+  }
+}</graph>
+        <key_phrases>Update MyDoctor records,update,edit,change,]</key_phrases>
+        <live_agent>false</live_agent>
+        <name>Update MyDoctor records</name>
+        <nlu_intent/>
+        <nlu_model/>
+        <nlu_provider/>
+        <roles/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 10:37:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>04e5ae0adbd4d410fec729e1ca961909</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Update MyDoctor records</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sys_cb_topic_04e5ae0adbd4d410fec729e1ca961909</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-23 10:41:25</sys_updated_on>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=04e5ae0adbd4d410fec729e1ca961909"/>
+</record_update>

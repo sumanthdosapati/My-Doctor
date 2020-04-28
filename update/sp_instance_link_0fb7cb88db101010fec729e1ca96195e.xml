@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color/>
+        <css/>
+        <glyph>hospital-o</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>Easy booking with your doctor</short_description>
+        <size>md</size>
+        <sp_column display_value="1">62a598e4db145010fec729e1ca96197c</sp_column>
+        <sp_page display_value="form">ed5f8ec347730200ba13a5554ee49046</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-16 07:57:57</sys_created_on>
+        <sys_id>0fb7cb88db101010fec729e1ca96195e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Book Appointment</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sp_instance_link_0fb7cb88db101010fec729e1ca96195e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-18 13:27:05</sys_updated_on>
+        <title>Book Appointment</title>
+        <type>url</type>
+        <u_image/>
+        <url>https://dev79854.service-now.com/my_doctor?id=sc_cat_item&amp;sys_id=3da142b8db589010fec729e1ca9619f9&amp;sysparm_category=778d9e34dbd89010fec729e1ca961957</url>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Top Icon",
+		"displayValue": "Top Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=0fb7cb88db101010fec729e1ca96195e"/>
+</record_update>

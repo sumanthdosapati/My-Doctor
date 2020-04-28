@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_cb_topic_category">
+    <sys_cb_topic_category action="INSERT_OR_UPDATE">
+        <description>Virtual agent topics for MyDoctor application</description>
+        <name>MyDoctor Topics</name>
+        <sys_class_name>sys_cb_topic_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-16 11:56:49</sys_created_on>
+        <sys_id>ea3ef788db141010fec729e1ca96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Virtual agent topics for MyDoctor application</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sys_cb_topic_category_ea3ef788db141010fec729e1ca96190f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-16 11:56:49</sys_updated_on>
+    </sys_cb_topic_category>
+</record_update>

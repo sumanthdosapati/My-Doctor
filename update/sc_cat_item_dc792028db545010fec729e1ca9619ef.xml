@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item">
+    <sc_cat_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category display_value="Cardio Medicines">1d472c28db545010fec729e1ca961962</category>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan/>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p><strong>ACE inhibitors</strong> can help if your heart is not pumping blood well. This type of medicine improves blood flow by helping to dilate (open) your arteries. It also lowers your blood pressure.</p>
+<p>If you have acute coronary syndrome (<strong>ACS</strong>), your doctor may want you to take an ACE inhibitor. Having ACS means that you have reduced blood flow to the heart. It could be caused by a variety of conditions. One ACE inhibitor might be all the medicine you need. Or your doctor may prescribe one in combination with other medicines. These could include a diuretic or a beta blocker.</p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>false</ignore_price>
+        <image/>
+        <list_price>0</list_price>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta>fever,pain</meta>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>ACE inhibitors</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <picture/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=dc792028db545010fec729e1ca9619ef&amp;sysparm_preview=true", "summary");</preview>
+        <price>1.3135</price>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <request_method/>
+        <roles/>
+        <sc_catalogs>6ada546cdb145010fec729e1ca96197d</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <short_description>Used for heart attacks</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <sys_class_name>sc_cat_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-17 09:43:20</sys_created_on>
+        <sys_id>dc792028db545010fec729e1ca9619ef</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>ACE inhibitors</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sc_cat_item_dc792028db545010fec729e1ca9619ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-21 07:29:34</sys_updated_on>
+        <template/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow display_value="Medicine Ordering nw">ff0decf5db109410fec729e1ca9619c5</workflow>
+    </sc_cat_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=dc792028db545010fec729e1ca9619ef"/>
+    <fx_price action="delete_multiple" query="id=dc792028db545010fec729e1ca9619ef"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>100</amount>
+        <currency display_value="INR">INR</currency>
+        <field>price</field>
+        <id>dc792028db545010fec729e1ca9619ef</id>
+        <parent/>
+        <reference_amount>1.3008</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-17 09:43:20</sys_created_on>
+        <sys_id>9c792028db545010fec729e1ca9619f0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-17 09:46:56</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="INR">INR</currency>
+        <field>recurring_price</field>
+        <id>dc792028db545010fec729e1ca9619ef</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-17 09:43:20</sys_created_on>
+        <sys_id>d4792028db545010fec729e1ca9619f1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-17 09:43:21</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

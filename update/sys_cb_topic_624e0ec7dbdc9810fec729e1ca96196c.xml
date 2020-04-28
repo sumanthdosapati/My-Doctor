@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <category display_value="Virtual agent topics for MyDoctor application">ea3ef788db141010fec729e1ca96190f</category>
+        <connect_queue/>
+        <description/>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.13.np4",
+  "goals": {
+    "a7a834b11b4746788eea0a810d14d534": {
+      "id": "a7a834b11b4746788eea0a810d14d534",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "f8cafb6e827b4d5dae7251d441c28235": {
+          "id": "f8cafb6e827b4d5dae7251d441c28235",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": "Hello {{vaInputs.user.first_name}} My name is Zing. Your virtual agent.",
+            "mode": "simple"
+          }
+        },
+        "ae7033f7bd8d497091fc038411db644b": {
+          "id": "ae7033f7bd8d497091fc038411db644b",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": "Thank you :) Ask me again when you need any help.",
+            "mode": "simple"
+          }
+        },
+        "61fc97c6ae244fba9bab641e073dc0c4": {
+          "id": "61fc97c6ae244fba9bab641e073dc0c4",
+          "stepType": "TextOutput",
+          "name": "Click appo link text",
+          "value": {
+            "value": "I will show you a link now. Click on it to open your appointment page.",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "2547e6d0c9fd44b29d81a078d461d6b6": {
+          "id": "2547e6d0c9fd44b29d81a078d461d6b6",
+          "stepType": "LinkOutput",
+          "name": "Appointment link",
+          "url": {
+            "value": "https://dev79854.service-now.com/my_doctor?id=sc_cat_item&amp;sys_id=3da142b8db589010fec729e1ca9619f9&amp;sysparm_category=778d9e34dbd89010fec729e1ca961957",
+            "mode": "simple"
+          },
+          "label": {
+            "value": "Book Appointment",
+            "mode": "simple"
+          },
+          "header": {
+            "value": "Here's your link",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "4c9f972a74124a408f25d7edb1ef292f": {
+          "stepType": "ChoicePrompt",
+          "name": "Help list",
+          "prompt": {
+            "value": "Choose any help from below",
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "optional": false,
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "1e752a03e5664292968274d384a2c630",
+          "id": "4c9f972a74124a408f25d7edb1ef292f",
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "entity": ""
+        },
+        "33a8e3bd18084dddb220b5411be1b3bd": {
+          "id": "33a8e3bd18084dddb220b5411be1b3bd",
+          "stepType": "Decision",
+          "name": "Help topic decision"
+        },
+        "7cf662e5bba7431580ea204c586839a9": {
+          "id": "7cf662e5bba7431580ea204c586839a9",
+          "stepType": "TextOutput",
+          "name": "Click medicines text",
+          "value": {
+            "value": "I will show you a link now. Click on it to book medicines.",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "5acb26b1ea914e26ba02e739cdfece9e": {
+          "id": "5acb26b1ea914e26ba02e739cdfece9e",
+          "stepType": "LinkOutput",
+          "name": "Medicines link",
+          "url": {
+            "value": "https://dev79854.service-now.com/my_doctor?id=sc_home",
+            "mode": "simple"
+          },
+          "label": {
+            "value": "Order Medicines",
+            "mode": "simple"
+          },
+          "header": {
+            "value": "Here's your link",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "c350efd950284d3fb29e6a099bc3603b": {
+          "id": "c350efd950284d3fb29e6a099bc3603b",
+          "stepType": "Prompt",
+          "name": "Other query",
+          "prompt": {
+            "value": "Type your query here ",
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "optional": false,
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "entity": "",
+          "variableId": "7999072a64d047639e09e582d6e2e92a"
+        },
+        "34efacee429540a8b397c3676c2c773a": {
+          "id": "34efacee429540a8b397c3676c2c773a",
+          "stepType": "TextOutput",
+          "name": "Cant help with this",
+          "value": {
+            "value": "Hey {{vaInputs.user.first_name}}, I cannot help you with this query..",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "a5e8625aafc24a1db2e594d2dac86367": {
+          "id": "a5e8625aafc24a1db2e594d2dac86367",
+          "stepType": "TextOutput",
+          "name": "dont worry",
+          "value": {
+            "value": "But, No worries {{vaInputs.user.first_name}}.",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "b56966d1ee4940a88d3b7ef8359aedf4": {
+          "id": "b56966d1ee4940a88d3b7ef8359aedf4",
+          "stepType": "LinkOutput",
+          "name": "Transfer to agent",
+          "url": {
+            "value": "https://dev79854.service-now.com/$chat_support.do?queueID=7d1888a2db1c1810fec729e1ca96190f",
+            "mode": "simple"
+          },
+          "label": {
+            "value": "",
+            "mode": "simple"
+          },
+          "header": {
+            "value": "Click on the link below and an agent will solve your query in live chat.",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "06e3a20552064920a3a6a559ce078e92": {
+          "id": "06e3a20552064920a3a6a559ce078e92",
+          "stepType": "TextOutput",
+          "name": "How can i help",
+          "value": {
+            "value": "I am glad to assist you.  How can i help you today?",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "5bfced0410724254be702005ca4aab7a",
+          "edgeType": "Branch",
+          "source": "33a8e3bd18084dddb220b5411be1b3bd",
+          "target": "c350efd950284d3fb29e6a099bc3603b",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "help_list=other",
+            "mode": "query"
+          },
+          "label": "Other"
+        },
+        {
+          "id": "f34d525ac99d420385bbec37f50aebf1",
+          "edgeType": "Edge",
+          "source": "61fc97c6ae244fba9bab641e073dc0c4",
+          "target": "2547e6d0c9fd44b29d81a078d461d6b6",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "77376f16f04e4dd88fa9b51d3733b51f",
+          "edgeType": "Edge",
+          "source": "2547e6d0c9fd44b29d81a078d461d6b6",
+          "target": "ae7033f7bd8d497091fc038411db644b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "942547a078384a679b7d862067e6e1aa",
+          "edgeType": "Edge",
+          "source": "4c9f972a74124a408f25d7edb1ef292f",
+          "target": "33a8e3bd18084dddb220b5411be1b3bd",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "72eb1a08c2c5456388a0c68a7ed12547",
+          "edgeType": "Branch",
+          "source": "33a8e3bd18084dddb220b5411be1b3bd",
+          "target": "61fc97c6ae244fba9bab641e073dc0c4",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "help_list=book_appointment",
+            "mode": "query"
+          },
+          "label": "Appointment"
+        },
+        {
+          "id": "f0bb6393387348caaabcc15e5bd081a4",
+          "edgeType": "Branch",
+          "source": "33a8e3bd18084dddb220b5411be1b3bd",
+          "target": "7cf662e5bba7431580ea204c586839a9",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "help_list=order_medicines",
+            "mode": "query"
+          },
+          "label": "Medicines"
+        },
+        {
+          "id": "1cbb9499e8c6432a944777abe4158ef9",
+          "edgeType": "Edge",
+          "source": "7cf662e5bba7431580ea204c586839a9",
+          "target": "5acb26b1ea914e26ba02e739cdfece9e",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e88ec5396f63483cbf0a7a5f49c8502c",
+          "edgeType": "Edge",
+          "source": "5acb26b1ea914e26ba02e739cdfece9e",
+          "target": "ae7033f7bd8d497091fc038411db644b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "f7d84aede40a48a89f12350ba572a2b1",
+          "edgeType": "Edge",
+          "source": "c350efd950284d3fb29e6a099bc3603b",
+          "target": "34efacee429540a8b397c3676c2c773a",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "396c11cb0067436ebd896bea40bb48e1",
+          "edgeType": "Edge",
+          "source": "34efacee429540a8b397c3676c2c773a",
+          "target": "a5e8625aafc24a1db2e594d2dac86367",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "00a87d7ecf8546908b539e9d3457824a",
+          "edgeType": "Edge",
+          "source": "a5e8625aafc24a1db2e594d2dac86367",
+          "target": "b56966d1ee4940a88d3b7ef8359aedf4",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e9cdd207b1cd46019127bf6db1b26471",
+          "edgeType": "Edge",
+          "source": "b56966d1ee4940a88d3b7ef8359aedf4",
+          "target": "ae7033f7bd8d497091fc038411db644b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "cde49db9da954baeb1edd9ab0e56f2a2",
+          "edgeType": "Edge",
+          "source": "f8cafb6e827b4d5dae7251d441c28235",
+          "target": "06e3a20552064920a3a6a559ce078e92",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "fc7bdcb603084056b7b0e2ccb101050f",
+          "edgeType": "Edge",
+          "source": "06e3a20552064920a3a6a559ce078e92",
+          "target": "4c9f972a74124a408f25d7edb1ef292f",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "1e752a03e5664292968274d384a2c630": {
+      "id": "1e752a03e5664292968274d384a2c630",
+      "name": "help_list",
+      "label": "Help List",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Book Appointment",
+          "value": "book_appointment"
+        },
+        {
+          "label": "Order Medicines",
+          "value": "order_medicines"
+        },
+        {
+          "label": "Other",
+          "value": "other"
+        }
+      ],
+      "category": "vaInputs"
+    },
+    "7999072a64d047639e09e582d6e2e92a": {
+      "id": "7999072a64d047639e09e582d6e2e92a",
+      "name": "other_query",
+      "label": "Other Query",
+      "varType": "string",
+      "category": "vaInputs"
+    }
+  }
+}</graph>
+        <key_phrases>Appointments and medicines,book,doctor,appointment,medicines,order,help</key_phrases>
+        <live_agent>false</live_agent>
+        <name>Appointments and medicines</name>
+        <nlu_intent/>
+        <nlu_model/>
+        <nlu_provider/>
+        <roles/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-25 11:28:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>624e0ec7dbdc9810fec729e1ca96196c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Appointments and medicines</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sys_cb_topic_624e0ec7dbdc9810fec729e1ca96196c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-25 15:13:17</sys_updated_on>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=624e0ec7dbdc9810fec729e1ca96196c"/>
+</record_update>

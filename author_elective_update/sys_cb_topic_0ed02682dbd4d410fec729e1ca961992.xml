@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="DELETE">
+        <applicability/>
+        <category display_value="Virtual agent topics for MyDoctor application">ea3ef788db141010fec729e1ca96190f</category>
+        <connect_queue/>
+        <description/>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.13.np4",
+  "goals": {
+    "27ccb598dc2546088afedf9c52696f01": {
+      "id": "27ccb598dc2546088afedf9c52696f01",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "0e9e0dd6733f44d3ac189b2a5153eddc": {
+          "id": "0e9e0dd6733f44d3ac189b2a5153eddc",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "d16ea34d2a964087b791ceff3f1cc815": {
+          "id": "d16ea34d2a964087b791ceff3f1cc815",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "153bccb3ee0c47d88713b60096d8d71d",
+          "edgeType": "Edge",
+          "source": "0e9e0dd6733f44d3ac189b2a5153eddc",
+          "target": "d16ea34d2a964087b791ceff3f1cc815",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {}
+}</graph>
+        <key_phrases>Update MyDoctor appointments,appointment,booking,update,change,edit</key_phrases>
+        <live_agent>false</live_agent>
+        <name>Update MyDoctor appointments</name>
+        <nlu_intent/>
+        <nlu_model/>
+        <nlu_provider/>
+        <roles/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 10:15:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>0ed02682dbd4d410fec729e1ca961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update MyDoctor appointments</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sys_cb_topic_0ed02682dbd4d410fec729e1ca961992</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 10:15:54</sys_updated_on>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="DELETE" query="document_key=0ed02682dbd4d410fec729e1ca961992"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</application>
+        <file_path/>
+        <instance_id>3d76430cdb74ff0049eac59705961984</instance_id>
+        <instance_name>dev79854</instance_name>
+        <name>sys_cb_topic_0ed02682dbd4d410fec729e1ca961992</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic"><sys_cb_topic action="INSERT_OR_UPDATE"><applicability/><category display_value="Virtual agent topics for MyDoctor application">ea3ef788db141010fec729e1ca96190f</category><connect_queue/><description/><flexible_conversation_switching>false</flexible_conversation_switching><graph>{
+  "graph_api_version": "1.0.13.np4",
+  "goals": {
+    "27ccb598dc2546088afedf9c52696f01": {
+      "id": "27ccb598dc2546088afedf9c52696f01",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "0e9e0dd6733f44d3ac189b2a5153eddc": {
+          "id": "0e9e0dd6733f44d3ac189b2a5153eddc",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "d16ea34d2a964087b791ceff3f1cc815": {
+          "id": "d16ea34d2a964087b791ceff3f1cc815",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "153bccb3ee0c47d88713b60096d8d71d",
+          "edgeType": "Edge",
+          "source": "0e9e0dd6733f44d3ac189b2a5153eddc",
+          "target": "d16ea34d2a964087b791ceff3f1cc815",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {}
+}</graph><key_phrases>Update MyDoctor appointments,appointment,booking,update,change,edit</key_phrases><live_agent>false</live_agent><name>Update MyDoctor appointments</name><nlu_intent/><nlu_model/><nlu_provider/><roles/><sys_class_name>sys_cb_topic</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-22 10:15:54</sys_created_on><sys_domain>global</sys_domain><sys_id>0ed02682dbd4d410fec729e1ca961992</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Update MyDoctor appointments</sys_name><sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package><sys_policy/><sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope><sys_update_name>sys_cb_topic_0ed02682dbd4d410fec729e1ca961992</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-22 10:15:54</sys_updated_on><variables/></sys_cb_topic><sys_variable_value action="delete_multiple" query="document_key=0ed02682dbd4d410fec729e1ca961992"/></record_update>]]></payload>
+        <payload_hash>-125042386</payload_hash>
+        <record_name>Update MyDoctor appointments</record_name>
+        <reverted_from/>
+        <source>b4a658dedb04d010fec729e1ca961941</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 10:15:54</sys_created_on>
+        <sys_id>8ad02246dbd4d410fec729e1ca961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171a16309c50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 10:15:54</sys_updated_on>
+        <type>Topic</type>
+        <update_guid>c2d022463ad4d4102db64ef5021a0480</update_guid>
+        <update_guid_history>c2d022463ad4d4102db64ef5021a0480:-125042386</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 10:33:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_cb_topic">sys_cb_topic</sys_db_object>
+        <sys_id>49bae0d3a596443c97f53c87d8767890</sys_id>
+        <sys_metadata>0ed02682dbd4d410fec729e1ca961992</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update MyDoctor appointments</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_scope_delete display_value="">00aa2808508b440c8000d0b4d69c1d90</sys_scope_delete>
+        <sys_update_name>sys_cb_topic_0ed02682dbd4d410fec729e1ca961992</sys_update_name>
+        <sys_update_version display_value="sys_cb_topic_0ed02682dbd4d410fec729e1ca961992">8ad02246dbd4d410fec729e1ca961980</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 10:33:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

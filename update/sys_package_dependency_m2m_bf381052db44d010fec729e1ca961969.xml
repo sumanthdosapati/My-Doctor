@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">89dc85b4db3200109fdf9235ca9619b4</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-10 08:41:53</sys_created_on>
+        <sys_id>bf381052db44d010fec729e1ca961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-10 08:41:53</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

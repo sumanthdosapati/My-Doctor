@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color/>
+        <css/>
+        <glyph>newspaper-o</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category display_value="health category">2e120f81db1cd010fec729e1ca961923</kb_category>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>Look for great articles on health</short_description>
+        <size>md</size>
+        <sp_column display_value="1">511654e4db145010fec729e1ca96193e</sp_column>
+        <sp_page display_value="kb_category">0e461a2147132100ba13a5554ee4900e</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-14 07:20:39</sys_created_on>
+        <sys_id>490c682bdbc8d410fec729e1ca9619ea</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Health Articles</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sp_instance_link_490c682bdbc8d410fec729e1ca9619ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-19 11:31:52</sys_updated_on>
+        <title>Health Articles</title>
+        <type>kb_category</type>
+        <u_image/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Top Icon",
+		"displayValue": "Top Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=490c682bdbc8d410fec729e1ca9619ea"/>
+</record_update>

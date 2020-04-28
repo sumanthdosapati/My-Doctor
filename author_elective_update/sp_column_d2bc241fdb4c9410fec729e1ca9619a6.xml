@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>3</order>
+        <size>4</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">92bc68dbdb4c9410fec729e1ca961968</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-13 12:45:16</sys_created_on>
+        <sys_id>d2bc241fdb4c9410fec729e1ca9619a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sp_column_d2bc241fdb4c9410fec729e1ca9619a6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-13 12:45:16</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</application>
+        <file_path/>
+        <instance_id>3d76430cdb74ff0049eac59705961984</instance_id>
+        <instance_name>dev79854</instance_name>
+        <name>sp_column_d2bc241fdb4c9410fec729e1ca9619a6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>3</order><size>4</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">92bc68dbdb4c9410fec729e1ca961968</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-13 12:45:16</sys_created_on><sys_id>d2bc241fdb4c9410fec729e1ca9619a6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>3</sys_name><sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package><sys_policy/><sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope><sys_update_name>sp_column_d2bc241fdb4c9410fec729e1ca9619a6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-13 12:45:16</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>1806037311</payload_hash>
+        <record_name>3</record_name>
+        <reverted_from/>
+        <source>b4a658dedb04d010fec729e1ca961941</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-13 12:45:16</sys_created_on>
+        <sys_id>1abc241fdb4c9410fec729e1ca9619a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17173928f200000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-13 12:45:16</sys_updated_on>
+        <type>Column</type>
+        <update_guid>52bc241f1f4c94108f8b6494a6de3aa7</update_guid>
+        <update_guid_history>52bc241f1f4c94108f8b6494a6de3aa7:1806037311</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="3">ffdca41fdb4c9410fec729e1ca9619f6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-13 12:45:55</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>0320fbc9f64a4a648022f69dfd407f59</sys_id>
+        <sys_metadata>d2bc241fdb4c9410fec729e1ca9619a6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_scope_delete display_value="">00aa2808508b440c8000d0b4d69c1d90</sys_scope_delete>
+        <sys_update_name>sp_column_d2bc241fdb4c9410fec729e1ca9619a6</sys_update_name>
+        <sys_update_version display_value="sp_column_d2bc241fdb4c9410fec729e1ca9619a6">1abc241fdb4c9410fec729e1ca9619a7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-13 12:45:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="MyDoctor connect support">5a762176db109810fec729e1ca961956</child>
+        <cloned>2020-04-24 13:56:19</cloned>
+        <last_validated>2020-04-24 13:56:19</last_validated>
+        <parent display_value="Connect Support">431542e2c3200200c3fd154e81d3aeeb</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category/&gt;&lt;client_script&gt;&lt;![CDATA[function ($http, $window, spUtil) {	 
+	var c = this;	
+  $http.get(c.options.queue_url).then(function (response) {		
+    if (response.data.result &amp;&amp; response.data.result.length)
+      angular.extend(c.data, response.data.result[0]);
+    else
+      angular.extend(c.data, response.data.result);
+		
+  })	
+  c.open = function () {		
+		console.log(spUtil.format(c.options.window.url, {sys_id: c.data.sys_id}), c.options.window.target, c.options.window.options)
+    $window.open(spUtil.format(c.options.window.url, {sys_id: c.data.sys_id}), c.options.window.target, c.options.window.options);
+  };
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.waiting-time {
+  float: right;
+  margin-right: 5px;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;color&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;sp-connect-support&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Connect Support&lt;/name&gt;&lt;option_schema&gt;[{"name":"queue_url","label":"Queue URL","type":"string"},{"name":"queue_name","label":"Queue Name","type":"string"},{"name":"queue_id","label":"Queue ID","type":"string"},{"name":"message","label":"Message","type":"string"},{"name":"window","label":"Window","type":"string"},{"name":"title","label":"Title","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {	
+	// Default Values
+	options.queue_url = options.queue_url || '/api/now/connect/support/queues';	
+	if (options.queue_name) 
+		options.queue_url += '?queue_name=' + options.queue_name;
+		
+	if (options.queue_id) 
+		options.queue_url += '/' + options.queue_id;
+	
+	options.title = options.title || 'Chat Support';
+	options.title = gs.getMessage(options.title);	
+	
+	options.message = options.message || 'Click here to start a chat';
+	options.message = gs.getMessage(options.message);	
+	options.window = options.window || {url: '/$chat_support.do?queueID={sys_id}', target: '_blank', options: 'location=no,toolbar=no,menubar=no,scrollbars=yes,width=760,height=600,resizable=yes'};
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-06-12 18:07:00&lt;/sys_created_on&gt;&lt;sys_id&gt;431542e2c3200200c3fd154e81d3aeeb&lt;/sys_id&gt;&lt;sys_mod_count&gt;125&lt;/sys_mod_count&gt;&lt;sys_name&gt;Connect Support&lt;/sys_name&gt;&lt;sys_package display_value="Connect Support and Service Portal Integration" source="com.glide.connect.support.service-portal"&gt;5ecc957adbdc5810fec729e1ca96193c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_431542e2c3200200c3fd154e81d3aeeb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 21:20:19&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-{{::c.options.color}} b"&gt;  
+  &lt;div class="panel-heading"&gt;
+    &lt;h4 class="panel-title"&gt;{{::c.options.title}}&lt;/h4&gt;
+  &lt;/div&gt;  
+  &lt;div class="panel-body"&gt;    
+    &lt;a class="btn btn-info btn-block" ng-click="c.open()" role="button"&gt;{{::c.options.message}}&lt;/a&gt;    
+  &lt;/div&gt;     
+  &lt;div class="panel-footer clearfix"&gt;
+    &lt;div class="pull-right"&gt;Avg wait: {{::c.data.average_wait_time}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-24 13:56:19</sys_created_on>
+        <sys_id>d2762176db109810fec729e1ca961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5a762176db109810fec729e1ca961956</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_d2762176db109810fec729e1ca961959</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-24 13:56:19</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

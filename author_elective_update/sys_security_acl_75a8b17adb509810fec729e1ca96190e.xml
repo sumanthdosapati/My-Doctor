@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_454737_doctor_nw_health_tips</description>
+        <name>x_454737_doctor_nw_health_tips</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-24 15:15:44</sys_created_on>
+        <sys_id>75a8b17adb509810fec729e1ca96190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_454737_doctor_nw_health_tips</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sys_security_acl_75a8b17adb509810fec729e1ca96190e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-24 15:15:44</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</application>
+        <file_path/>
+        <instance_id>3d76430cdb74ff0049eac59705961984</instance_id>
+        <instance_name>dev79854</instance_name>
+        <name>sys_security_acl_75a8b17adb509810fec729e1ca96190e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_454737_doctor_nw_health_tips</description><name>x_454737_doctor_nw_health_tips</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-24 15:15:44</sys_created_on><sys_id>75a8b17adb509810fec729e1ca96190e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_454737_doctor_nw_health_tips</sys_name><sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package><sys_policy/><sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope><sys_update_name>sys_security_acl_75a8b17adb509810fec729e1ca96190e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-24 15:15:44</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>1101150744</payload_hash>
+        <record_name>x_454737_doctor_nw_health_tips</record_name>
+        <reverted_from/>
+        <source>b4a658dedb04d010fec729e1ca961941</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-24 15:15:44</sys_created_on>
+        <sys_id>3da8b17adb509810fec729e1ca961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171acc243920000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-24 15:15:44</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>75a8b17a805098102b96016b22e1fd10</update_guid>
+        <update_guid_history>75a8b17a805098102b96016b22e1fd10:1101150744</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-24 15:18:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>588d5f559b9e41d09eaf418071c97840</sys_id>
+        <sys_metadata>75a8b17adb509810fec729e1ca96190e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_454737_doctor_nw_health_tips</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_parent display_value="">b5a8b17adb509810fec729e1ca961938</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_scope_delete display_value="">00aa2808508b440c8000d0b4d69c1d90</sys_scope_delete>
+        <sys_update_name>sys_security_acl_75a8b17adb509810fec729e1ca96190e</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_75a8b17adb509810fec729e1ca96190e">3da8b17adb509810fec729e1ca961910</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-24 15:18:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

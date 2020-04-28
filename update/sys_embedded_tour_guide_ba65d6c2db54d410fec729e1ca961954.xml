@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_guide">
+    <sys_embedded_tour_guide action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_parameters/>
+        <autolaunch_order>0</autolaunch_order>
+        <context>my_doctor?id=my_doctor_index&amp;gtd_portal_title=My Doctor&amp;gtd_page_title=My Doctor Homepage</context>
+        <description/>
+        <has_concl>true</has_concl>
+        <has_intro>true</has_intro>
+        <name>How to book appointment</name>
+        <options/>
+        <roles/>
+        <sp_page display_value="my_doctor_index">24dba897db4c9410fec729e1ca96190d</sp_page>
+        <sp_portal display_value="My Doctor">a4616493db4c9410fec729e1ca961918</sp_portal>
+        <status>published</status>
+        <sys_class_name>sys_embedded_tour_guide</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 09:25:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ba65d6c2db54d410fec729e1ca961954</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>How to book appointment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sys_embedded_tour_guide_ba65d6c2db54d410fec729e1ca961954</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 09:33:11</sys_updated_on>
+        <type>service_portal</type>
+    </sys_embedded_tour_guide>
+</record_update>

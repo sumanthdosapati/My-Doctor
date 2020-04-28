@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="announcement">
+    <announcement action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <click_target/>
+        <details/>
+        <details_link_text/>
+        <details_page/>
+        <details_url/>
+        <dismiss_options>session_dismissible</dismiss_options>
+        <display_first>true</display_first>
+        <display_style display_value="Normal">704dedd6e7d4030075c2a117c2f6a91b</display_style>
+        <from>2020-04-01 12:32:27</from>
+        <glyph>clock-o</glyph>
+        <glyph_alt_text/>
+        <name>My Doctor announcements</name>
+        <public>true</public>
+        <roles/>
+        <summary>Due to the affect of COVID-19, some services in the hospitals may be on hold and will resume later. Please cooperate with us.</summary>
+        <sys_class_name>announcement</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-24 12:39:00</sys_created_on>
+        <sys_id>5bc2ddbedb9c5810fec729e1ca961993</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>My Doctor announcements</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>announcement_5bc2ddbedb9c5810fec729e1ca961993</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-24 12:43:50</sys_updated_on>
+        <title>Corona Affect</title>
+        <to>2020-05-31 12:32:39</to>
+        <type>67eaf134e7a3320075c2a117c2f6a9d2,52fa79f8e763320075c2a117c2f6a991</type>
+    </announcement>
+    <sys_translated_text action="delete_multiple" query="documentkey=5bc2ddbedb9c5810fec729e1ca961993"/>
+</record_update>

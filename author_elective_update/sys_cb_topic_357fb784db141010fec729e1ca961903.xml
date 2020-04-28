@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="DELETE">
+        <applicability/>
+        <category display_value="Virtual agent topics for MyDoctor application">ea3ef788db141010fec729e1ca96190f</category>
+        <connect_queue/>
+        <description>Topic to allow users to update their open MyDoctor appointments.</description>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.13.np4",
+  "goals": {
+    "d223e44e88874e4983086ca8d59324df": {
+      "id": "d223e44e88874e4983086ca8d59324df",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "f38e117a6d7c4307b0582e15bbae988f": {
+          "id": "f38e117a6d7c4307b0582e15bbae988f",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": "I can find and help you update MyDoctor appointments  for a category",
+            "mode": "simple"
+          }
+        },
+        "80db66e12445447796094846ce49a593": {
+          "id": "80db66e12445447796094846ce49a593",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": "Ask me again when you need to update any appointments :)",
+            "mode": "simple"
+          }
+        },
+        "32fd04b527be413e9b2ad2cdc4589437": {
+          "stepType": "ChoicePrompt",
+          "name": "MyDoctor Category",
+          "prompt": {
+            "value": "Which type of record you would like to view",
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "optional": false,
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "a8e04a130fd44a34b04b8743c99e0897",
+          "id": "32fd04b527be413e9b2ad2cdc4589437",
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "entity": ""
+        },
+        "1f58b17bb8d44fcba506f6d9ce04d0a8": {
+          "id": "1f58b17bb8d44fcba506f6d9ce04d0a8",
+          "stepType": "TextOutput",
+          "name": "Confirm Appointment category",
+          "value": {
+            "value": "You selected : {{vaInputs.mydoctor_category}}",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "affff90a0fec426d81b9e2476013c3d0": {
+          "stepType": "ReferenceChoicePrompt",
+          "name": "MyDoctor list",
+          "prompt": {
+            "value": "Select a apointment to view",
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "optional": false,
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "90c1384e4af34a47bb53352367b893eb",
+          "id": "affff90a0fec426d81b9e2476013c3d0",
+          "mode": "glide_record",
+          "script": "",
+          "noRecordsResponseMsg": {
+            "value": "You have no open MyDoctor appointments.",
+            "mode": "simple"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "active=true^opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "entity": ""
+        }
+      },
+      "edges": [
+        {
+          "id": "be57494426354cac95ac64243b0930b8",
+          "edgeType": "Edge",
+          "source": "f38e117a6d7c4307b0582e15bbae988f",
+          "target": "32fd04b527be413e9b2ad2cdc4589437",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "cddbf9fa074d448e98fe48f2a7e4bc5a",
+          "edgeType": "Edge",
+          "source": "32fd04b527be413e9b2ad2cdc4589437",
+          "target": "1f58b17bb8d44fcba506f6d9ce04d0a8",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "950285736ea64fb390961abcefc32003",
+          "edgeType": "Edge",
+          "source": "1f58b17bb8d44fcba506f6d9ce04d0a8",
+          "target": "affff90a0fec426d81b9e2476013c3d0",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e824dee1b1a549748c94112f75bc1e39",
+          "edgeType": "Edge",
+          "source": "affff90a0fec426d81b9e2476013c3d0",
+          "target": "80db66e12445447796094846ce49a593",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "a8e04a130fd44a34b04b8743c99e0897": {
+      "id": "a8e04a130fd44a34b04b8743c99e0897",
+      "name": "mydoctor_category",
+      "label": "MyDoctor Category",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "General",
+          "value": "general"
+        },
+        {
+          "label": "Obstetrician",
+          "value": "obstetrician"
+        },
+        {
+          "label": "Orthopedic",
+          "value": "orthopedic"
+        },
+        {
+          "label": "Cardiologist",
+          "value": "cardiologist"
+        },
+        {
+          "label": "Pediatrician",
+          "value": "pediatrician"
+        },
+        {
+          "label": "Other",
+          "value": "other"
+        }
+      ],
+      "category": "vaInputs"
+    },
+    "90c1384e4af34a47bb53352367b893eb": {
+      "id": "90c1384e4af34a47bb53352367b893eb",
+      "name": "mydoctor_list",
+      "label": "MyDoctor List",
+      "varType": "reference",
+      "table": "sc_req_item",
+      "category": "vaInputs"
+    }
+  }
+}</graph>
+        <key_phrases>View open MyDoctor appointments,mydoctor,appointments,my appointments,appointment</key_phrases>
+        <live_agent>false</live_agent>
+        <name>View open MyDoctor appointments</name>
+        <nlu_intent/>
+        <nlu_model/>
+        <nlu_provider/>
+        <roles/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-16 12:01:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>357fb784db141010fec729e1ca961903</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>View open MyDoctor appointments</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_update_name>sys_cb_topic_357fb784db141010fec729e1ca961903</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 10:21:09</sys_updated_on>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="DELETE" query="document_key=357fb784db141010fec729e1ca961903"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</application>
+        <file_path/>
+        <instance_id>3d76430cdb74ff0049eac59705961984</instance_id>
+        <instance_name>dev79854</instance_name>
+        <name>sys_cb_topic_357fb784db141010fec729e1ca961903</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic"><sys_cb_topic action="INSERT_OR_UPDATE"><applicability/><category display_value="Virtual agent topics for MyDoctor application">ea3ef788db141010fec729e1ca96190f</category><connect_queue/><description>Topic to allow users to update their open MyDoctor appointments.</description><flexible_conversation_switching>false</flexible_conversation_switching><graph>{
+  "graph_api_version": "1.0.13.np4",
+  "goals": {
+    "d223e44e88874e4983086ca8d59324df": {
+      "id": "d223e44e88874e4983086ca8d59324df",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "f38e117a6d7c4307b0582e15bbae988f": {
+          "id": "f38e117a6d7c4307b0582e15bbae988f",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": "I can find and help you update MyDoctor appointments  for a category",
+            "mode": "simple"
+          }
+        },
+        "80db66e12445447796094846ce49a593": {
+          "id": "80db66e12445447796094846ce49a593",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": "Ask me again when you need to update any appointments :)",
+            "mode": "simple"
+          }
+        },
+        "32fd04b527be413e9b2ad2cdc4589437": {
+          "stepType": "ChoicePrompt",
+          "name": "MyDoctor Category",
+          "prompt": {
+            "value": "Which type of record you would like to view",
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "optional": false,
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "a8e04a130fd44a34b04b8743c99e0897",
+          "id": "32fd04b527be413e9b2ad2cdc4589437",
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "entity": ""
+        },
+        "1f58b17bb8d44fcba506f6d9ce04d0a8": {
+          "id": "1f58b17bb8d44fcba506f6d9ce04d0a8",
+          "stepType": "TextOutput",
+          "name": "Confirm Appointment category",
+          "value": {
+            "value": "You selected : {{vaInputs.mydoctor_category}}",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "affff90a0fec426d81b9e2476013c3d0": {
+          "stepType": "ReferenceChoicePrompt",
+          "name": "MyDoctor list",
+          "prompt": {
+            "value": "Select a apointment to view",
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "optional": false,
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "90c1384e4af34a47bb53352367b893eb",
+          "id": "affff90a0fec426d81b9e2476013c3d0",
+          "mode": "glide_record",
+          "script": "",
+          "noRecordsResponseMsg": {
+            "value": "You have no open MyDoctor appointments.",
+            "mode": "simple"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "active=true^opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "entity": ""
+        }
+      },
+      "edges": [
+        {
+          "id": "be57494426354cac95ac64243b0930b8",
+          "edgeType": "Edge",
+          "source": "f38e117a6d7c4307b0582e15bbae988f",
+          "target": "32fd04b527be413e9b2ad2cdc4589437",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "cddbf9fa074d448e98fe48f2a7e4bc5a",
+          "edgeType": "Edge",
+          "source": "32fd04b527be413e9b2ad2cdc4589437",
+          "target": "1f58b17bb8d44fcba506f6d9ce04d0a8",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "950285736ea64fb390961abcefc32003",
+          "edgeType": "Edge",
+          "source": "1f58b17bb8d44fcba506f6d9ce04d0a8",
+          "target": "affff90a0fec426d81b9e2476013c3d0",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e824dee1b1a549748c94112f75bc1e39",
+          "edgeType": "Edge",
+          "source": "affff90a0fec426d81b9e2476013c3d0",
+          "target": "80db66e12445447796094846ce49a593",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "a8e04a130fd44a34b04b8743c99e0897": {
+      "id": "a8e04a130fd44a34b04b8743c99e0897",
+      "name": "mydoctor_category",
+      "label": "MyDoctor Category",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "General",
+          "value": "general"
+        },
+        {
+          "label": "Obstetrician",
+          "value": "obstetrician"
+        },
+        {
+          "label": "Orthopedic",
+          "value": "orthopedic"
+        },
+        {
+          "label": "Cardiologist",
+          "value": "cardiologist"
+        },
+        {
+          "label": "Pediatrician",
+          "value": "pediatrician"
+        },
+        {
+          "label": "Other",
+          "value": "other"
+        }
+      ],
+      "category": "vaInputs"
+    },
+    "90c1384e4af34a47bb53352367b893eb": {
+      "id": "90c1384e4af34a47bb53352367b893eb",
+      "name": "mydoctor_list",
+      "label": "MyDoctor List",
+      "varType": "reference",
+      "table": "sc_req_item",
+      "category": "vaInputs"
+    }
+  }
+}</graph><key_phrases>View open MyDoctor appointments,mydoctor,appointments,my appointments,appointment</key_phrases><live_agent>false</live_agent><name>View open MyDoctor appointments</name><nlu_intent/><nlu_model/><nlu_provider/><roles/><sys_class_name>sys_cb_topic</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-16 12:01:27</sys_created_on><sys_domain>global</sys_domain><sys_id>357fb784db141010fec729e1ca961903</sys_id><sys_mod_count>6</sys_mod_count><sys_name>View open MyDoctor appointments</sys_name><sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package><sys_policy/><sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope><sys_update_name>sys_cb_topic_357fb784db141010fec729e1ca961903</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-22 10:21:09</sys_updated_on><variables/></sys_cb_topic><sys_variable_value action="delete_multiple" query="document_key=357fb784db141010fec729e1ca961903"/></record_update>]]></payload>
+        <payload_hash>-1329279891</payload_hash>
+        <record_name>View open MyDoctor appointments</record_name>
+        <reverted_from/>
+        <source>b4a658dedb04d010fec729e1ca961941</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 10:21:09</sys_created_on>
+        <sys_id>0b026246dbd4d410fec729e1ca96192c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171a167d66e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 10:21:09</sys_updated_on>
+        <type>Topic</type>
+        <update_guid>830262460cd4d4107e75a7253493432c</update_guid>
+        <update_guid_history>830262460cd4d4107e75a7253493432c:-1329279891,da802682e8d4d410c708597fb4db788f:1586560550,202bc054575410105658ad8c1322503e:1291902558,a6294c94d8541010ef04d35e932dc9fe:-307160237,0978c0546b5410101deef89cebce1c0d:1181507429,aa10441c821410104c0a54ba6ad59ac0:-227538343,467f3fc8881410100aeff7a7f3cc134d:-123232845</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 10:33:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_cb_topic">sys_cb_topic</sys_db_object>
+        <sys_id>6cb99ebc44bb40f085f16c9bb6e2d4c1</sys_id>
+        <sys_metadata>357fb784db141010fec729e1ca961903</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>View open MyDoctor appointments</sys_name>
+        <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+        <sys_scope_delete display_value="">00aa2808508b440c8000d0b4d69c1d90</sys_scope_delete>
+        <sys_update_name>sys_cb_topic_357fb784db141010fec729e1ca961903</sys_update_name>
+        <sys_update_version display_value="sys_cb_topic_357fb784db141010fec729e1ca961903">0b026246dbd4d410fec729e1ca96192c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 10:33:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

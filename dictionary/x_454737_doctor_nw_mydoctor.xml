@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="MyDoctor" max_length="40" name="x_454737_doctor_nw_mydoctor" sizeclass="8" type="collection">
+        <element label="Age" mandatory="true" max_length="40" name="age" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="general" label="Category" mandatory="true" max_length="40" name="category" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Pediatrician" value="pediatrician"/>
+                <element inactive_on_update="false" label="General" sequence="0" value="general"/>
+                <element inactive_on_update="false" label="Orthopedic" sequence="2" value="orthopedic"/>
+                <element inactive_on_update="false" label="Cardiologist" sequence="3" value="cardiologist"/>
+                <element inactive_on_update="false" label="Other" sequence="7" value="other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="male" label="Gender" mandatory="true" max_length="40" name="gender" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Male" sequence="0" value="male"/>
+                <element inactive_on_update="false" label="Female" sequence="1" value="female"/>
+                <element inactive_on_update="false" label="Prefer not to say" sequence="2" value="prefer not to say"/>
+            </choice>
+        </element>
+        <element label="Mobile" mandatory="true" max_length="40" name="mobile" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="consulting" label="Appointment type" mandatory="true" max_length="40" name="u_appointment_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Consulting" sequence="0" value="consulting"/>
+                <element inactive_on_update="false" label="Surgery" sequence="1" value="surgery"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" mandatory="true" max_length="40" name="u_requested_for_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>

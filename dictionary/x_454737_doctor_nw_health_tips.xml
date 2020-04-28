@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Health tips" max_length="40" name="x_454737_doctor_nw_health_tips" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Source" max_length="40" name="source" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Tip" max_length="100" name="tip" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_appointment_type" table="x_454737_doctor_nw_mydoctor" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_appointment_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Consulting</label>
+            <language>en</language>
+            <name>x_454737_doctor_nw_mydoctor</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-17 16:25:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>568546a4dbd85010fec729e1ca961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-17 16:25:42</sys_updated_on>
+            <value>consulting</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_appointment_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Surgery</label>
+            <language>en</language>
+            <name>x_454737_doctor_nw_mydoctor</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-17 16:25:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>968546a4dbd85010fec729e1ca961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-17 16:25:42</sys_updated_on>
+            <value>surgery</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_appointment_type</element>
+            <name>x_454737_doctor_nw_mydoctor</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-17 16:25:42</sys_created_on>
+            <sys_id>9e8546a4dbd85010fec729e1ca961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_appointment_type</sys_name>
+            <sys_package display_value="My Doctor" source="x_454737_doctor_nw">e4a610dedb04d010fec729e1ca9619a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="My Doctor">e4a610dedb04d010fec729e1ca9619a5</sys_scope>
+            <sys_update_name>sys_choice_x_454737_doctor_nw_mydoctor_u_appointment_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-17 16:25:42</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>
